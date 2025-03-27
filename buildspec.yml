@@ -8,3 +8,7 @@ phases:
       - echo "Installing Serverless Framework..."
       - npm install -g serverless
       - serverless --version
+  build:
+    commands:
+      - echo "Deploying with Serverless Framework..."
+      - serverless --version
