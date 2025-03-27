@@ -2,5 +2,9 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 22
     commands:
-      - echo "Hello World"
+      - echo "Installing Serverless Framework..."
+      - npm install -g serverless
+      - serverless --version
