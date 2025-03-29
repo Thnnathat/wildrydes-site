@@ -13,4 +13,3 @@ phases:
 artifacts:
   files:
     - '**/*'  # ระบุไฟล์ทั้งหมดที่ต้องการเก็บเป็นผลลัพธ์ของการ Build
-  base-directory: '.'
