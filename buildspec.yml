@@ -9,3 +9,4 @@ phases:
       - npm install -g serverless
       - serverless --version
       - aws s3 ls
+      - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
