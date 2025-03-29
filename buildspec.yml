@@ -2,11 +2,8 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 22
     commands:
-      - echo "Installing Serverless Framework..."
-      - npm install -g serverless
-      - serverless --version
       - aws s3 ls
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - echo $CODEBUILD_SOURCE_REPO_URL
+      - echo $CODEBUILD_SOURCE_VERSION
