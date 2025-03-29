@@ -8,9 +8,4 @@ phases:
       - echo "Installing Serverless Framework..."
       - npm install -g serverless
       - serverless --version
-      - aws --version
-
-artifacts:
-  files:
-    - '**/*'  # ระบุไฟล์ทั้งหมดที่ต้องการเก็บเป็นผลลัพธ์ของการ Build
-  discard-paths: yes
+      - aws s3 ls
