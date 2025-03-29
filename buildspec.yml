@@ -8,5 +8,6 @@ phases:
       - echo "Installing Serverless Framework..."
       - npm install -g serverless
       - serverless --version
+      - aws s3 ls
       
 
